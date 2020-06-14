@@ -20,5 +20,5 @@ complete <- function(directory, id = 1:332){
         NumberOfCompleteCase=c(NumberOfCompleteCase,nrow(dataWithoutNa)) 
     }
     df <- data.frame("id"=ID,"nobs"=NumberOfCompleteCase)
-    print(df)
+    return(df)
 }
