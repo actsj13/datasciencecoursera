@@ -19,5 +19,5 @@ pollutantmean <- function(directory, pollutant , id = 1:332){
         dataOfAllFileSelectedPollutant <- c(dataOfAllFileSelectedPollutant,dataOfOneFileSelectedPollutant)
     }
     meanOfAll <- mean(dataOfAllFileSelectedPollutant, na.rm=TRUE)
-    print(meanOfAll)
+    return(meanOfAll)
 }
